@@ -1,0 +1,55 @@
+.form {
+    /* border: 2px solid; */
+    padding: 0.5rem;
+    min-width: 300px;
+}
+
+p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+input {
+    border: 1px solid;
+    width: 100%;
+    padding: 0.4rem 0.4rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.2rem;
+    border-radius: 0.2rem;
+    outline: none;
+    transition: border 300ms ease;
+}
+
+input::placeholder {
+    color: oklch(70.7% 0.022 261.325);
+}
+
+input:focus {
+    border:1px solid white;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.btn .add-btn {
+    padding: 0.4rem 2rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.btn .back-btn, .btn .update-btn {
+    padding: 0.4rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: oklch(44.6% 0.03 256.802);
+    transition: background-color 300ms ease;
+}
