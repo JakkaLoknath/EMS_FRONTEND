@@ -5,7 +5,7 @@ export default function FetchEmp({setFetchAll, setEdit, setAdd, setSelectedEmplo
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
-      fetch("https://emsbackend-production-296c.up.railway.app")
+      fetch("https://emsbackend-production-296c.up.railway.app/getallemployees")
 	  .then(res => res.json())
 	  .then(data => setEmployees(data))
 	  .catch(e => console.log("Something Went Wrong"))
