@@ -33,9 +33,11 @@ export default function FetchEmp({setFetchAll, setEdit, setAdd, setSelectedEmplo
 
     return(	
       <div className="outer"> 
-        <div>
+        <h3 className="screen-msg">Open only on desktop</h3>
+        <div className="inner">
           <h2>EMS</h2>
           <h4>(REACT + SPRING BOOT REST API)</h4>
+          <div className="table-con">
           <table>
             <thead>
               <tr>
@@ -70,6 +72,7 @@ export default function FetchEmp({setFetchAll, setEdit, setAdd, setSelectedEmplo
               ))
             }
           </table>
+          </div>
 		  <div className="add-btn">
 			<button onClick={() => {
 				setAdd(true);

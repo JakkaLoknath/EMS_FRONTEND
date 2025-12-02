@@ -22,7 +22,7 @@ h2, h4 {
     max-height: 400px;
     overflow-y: auto;
     scrollbar-width: none;
-    border: 1px solid;
+    border-top: 1px solid;
 }
 
 table, td, th {
@@ -77,4 +77,20 @@ td {
     cursor: pointer;
     background-color: oklch(44.6% 0.03 256.802);
     transition: background-color 300ms ease;
+}
+
+.screen-msg {
+    display: none;
+    text-align: center;
+}
+
+@media (max-width : 700px)
+{
+    .screen-msg {
+        display: block;
+    }
+
+    .inner {
+        display: none;
+    }
 }

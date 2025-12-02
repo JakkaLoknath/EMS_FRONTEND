@@ -4,13 +4,19 @@ export default function AddEmp({setFetchAll, setAdd}) {
 
     const[name, setName] = useState("");
     const[dept, setDept] = useState("");
-    const[sal, setSal] = useState();
+    const[sal, setSal] = useState(0);
     const[city, setCity] = useState("");
 
     const handleAdd = async () => {
-        if(name.trim() === "" || dept.trim() === "" || sal.trim() === 0 || city.trim() === "")
+        if(name.trim() === "" || dept.trim() === "" || city.trim() === "")
         {
             alert("Enter all Fields");
+            return;
+        }
+
+        if(sal <= 0)
+        {
+            alert("Salary Can not be Zero");
             return;
         }
         
