@@ -16,7 +16,7 @@ export default function Edit({setFetchAll, setEdit, selectedEmployee}) {
             city : cit
         }
 
-        const res = await fetch("https://emsbackend-production-296c.up.railway.app/addemployee", {
+        const res = await fetch("https://ems-backend-urrv.onrender.com/addemployee", {
             method : "POST",
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify(emp)
