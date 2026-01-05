@@ -5,7 +5,7 @@ export default function FetchEmp({setFetchAll, setEdit, setAdd, setSelectedEmplo
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
-      fetch("https://emsbackend-production-296c.up.railway.app/getallemployees")
+      fetch("https://ems-backend-urrv.onrender.com/getallemployees")
 	  .then(res => res.json())
 	  .then(data => setEmployees(data))
 	  .catch(e => console.log("Something Went Wrong"))
@@ -17,7 +17,7 @@ export default function FetchEmp({setFetchAll, setEdit, setAdd, setSelectedEmplo
         return;
       }
 
-      const res = await fetch(`https://emsbackend-production-296c.up.railway.app/removeemployee/${id}`, {
+      const res = await fetch(`https://ems-backend-urrv.onrender.com/removeemployee/${id}`, {
         method : "DELETE"
       });
 
